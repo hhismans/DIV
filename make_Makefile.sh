@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if test -f "Makefile"; then rm Makefile;fi
-ls $1/ft_*.c > list
+ls $1ft_*.c > list
 vim Makefile -c :Stdheader -c :wq
 echo "
 \\n\\nDEL = rm -f
